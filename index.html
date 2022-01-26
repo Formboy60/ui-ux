@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La cuisine de Nico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logosite">
+            <img class="logo" src="images/logo (1).png" alt="logo du site">
+        </div>
+        <div class="midhead">
+            <h1>La cuisine de Nico</h1>
+            <nav>
+                <ul class="navlist">
+                    <li class="navlist 1"><a href="#">Nos menus</a></li>
+                    <li class="navlist 2"><a href="#">Nos producteurs</a></li>
+                    <li class="navlist 3"><a href="#">Réservation</a></li>
+                    <li class="navlist 4"><a href="#">E-boutique</a></li>
+                    <li class="navlist 5"><a href="#">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="login">
+            <a href="#profil"><img class="profil" src="images/profil.png" alt=" profil"></a>
+        
+
+            <div id="profil" class="modal">
+                <div class="intermodal">
+                    <form method="post" action="traitement.php"></form>
+                        <p><label for="utilisateur">Utilisateur : </label><input type="text" name="utilisateur" id="utilisateur"></p>
+                        <br>
+                        <p><label for="mdp">mot de passe : </label><input type="password" name="mdp" id="mdp"></p>
+                        <br>
+                        <p><input type="submit" value="Connexion"></label></p>
+                        <br><br>
+                        <a href="#">Nouvel utilisateur</a>
+                        
+                        <a href="#" class="fermmodal">&times;</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </header>
+    <main>
+        <div class="apropos">
+            <div class="photo">
+                <img class="cuisto" src="images/moi.JPG" alt="coucou">
+            </div>
+            <div class="desc">       
+                <p class="descr">Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste. Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per Catonem, nunc repetetur ordo gestorum.</p>
+            </div> 
+        </div>
+
+        <div class="imagesbas">
+            <div class="plat">
+                <a href="#"><img src="images/plat1.JPG" alt="photo plat"></a>
+            </div>
+            <div class="producteur">
+                <a href="#"><img src="images/producteur1.jpg" alt="photo producteur"></a>
+            </div>
+            <div class="produit">
+                <a href="#"><img src="images/fromage.jpeg" alt="photo fromage"></a>
+            </div>            
+        </div>
+
+    </main>
+    <footer>
+        <a href="#">Mentions légales</a>
+        <a href="#">Traitement des données</a>
+        <div class="réseaux">
+            <img class="facebook" src="images/facebook.png" alt=" logo facebook">
+            <img class="twitter" src="images/twitter.png" alt="logo twitter">
+            <img class="insta" src="images/insta.png" alt="logo insta">
+        </div>
+
+    </footer>
+
+    
+</body>
+
+
+</html>
