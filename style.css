@@ -18,7 +18,7 @@ header{
 .logosite{
   display:flex;
   width: 150px;
-  height: 150px;
+  height: auto;
 }
 
 .logo{
@@ -114,18 +114,27 @@ a{
     background-image: url(images/fond.jpg);
     display: flex;
     flex-direction: column;
+    background-attachment: fixed;
   }
 
   .apropos{
     display: flex;
-    margin: 100px 50px 0 50px;
+    margin: 100px 50px 250px 50px;
 
   }
 
   .cuisto{
+    display: flex;
+    height: auto;
+    width: auto;
+    border-radius: 50% 50% 0% 50%;
+    object-fit: contain;
+  }
+
+  .photo{
+    display: flex;
     height: 250px;
     width: 250px;
-    border-radius: 50% 50% 0% 50%;
   }
 
   .descr{
@@ -134,15 +143,103 @@ a{
     font-size: 25px;
     padding: auto;
     margin-top: 100px;
+    margin-left: 25px;
   }
 
-  .desc{
-    
-  }
 
   .imagesbas{
     display: flex;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    object-fit: contain;
+  }
+
+  .plat, .producteur, .produit{
+    display: flex;
+    width: 300px;
+    height: 199px;
+    object-fit: contain;
+  }
+
+  .plat1, .producteur1, .produit1{
+    display: flex;
+    width: auto;
+    height: auto;
+    
+  }
+
+  /* css footer */
+  footer{
+    background-color: rgb(15, 64, 8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .reseaux{
+    display: flex;
+    height: 75px;
+    width: auto;
+    align-items: center;
+  }
+
+  .facebook, .insta{
+    height: 60px;    
+  }
+
+  .twitter {
+    height: 70px;
+  }
+
+  .facebook, .twitter{
+    margin-right: 25px;
   }
 
 
-@media all and (max)
+
+ 
+
+
+@media all and (max-width: 950px){
+
+  .imagesbas{
+    display: grid;
+    grid-template-columns: 50% 20px 50%;
+    grid-template-rows: 199px 20px 199px 20px 199px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    object-fit: contain;
+  }
+
+  .plat, .producteur, .produit{
+    display: flex;
+    width: 300px;
+    height: 199px;
+    object-fit: contain;
+  }
+
+  .plat1, .producteur1, .produit1{
+    display: flex;
+    width: auto;
+    height: auto;
+    
+  }
+
+  .plat{
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .producteur{
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+  .produit{
+    grid-row-start: 5;
+    grid-column-start: 1;
+  }
+
+}
