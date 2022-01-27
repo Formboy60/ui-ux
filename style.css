@@ -70,6 +70,8 @@ a{
 }
 
 
+
+
 /* debut modal login */
 .modal {
     visibility: hidden;
@@ -165,7 +167,7 @@ a{
     display: flex;
     width: auto;
     height: auto;
-    
+    flex: 1;
   }
 
   /* css footer */
@@ -201,6 +203,52 @@ a{
 
 
 @media all and (max-width: 950px){
+
+
+  h1{
+    font-size: 45px;
+  }
+
+  .logosite{
+    display:flex;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .logo{
+    max-width: 100%;
+    max-height: auto;
+  }
+  
+  .login{
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profil{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .cuisto{
+    display: flex;
+    height: auto;
+    width: auto;
+    border-radius: 50% 50% 0% 50%;
+    object-fit: contain;
+  }
+
+  .photo{
+    display: flex;
+    height: 150px;
+    width: 150px;
+  }
+
+  .descr{
+    font-size: 18px;
+  }
 
   .imagesbas{
     display: grid;
@@ -241,5 +289,13 @@ a{
     grid-row-start: 5;
     grid-column-start: 1;
   }
+
+  
+
+}
+
+@media all and (max-width: 650px){
+
+
 
 }
